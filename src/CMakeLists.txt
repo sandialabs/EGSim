@@ -19,6 +19,4 @@ endif()
 add_definitions(-DIEEE_STRICT)
 add_definitions(-g)
 
-include_directories(../pg_dist/app/egsim)
-
 INSTALL(TARGETS egsim DESTINATION bin)
