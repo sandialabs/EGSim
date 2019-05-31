@@ -1,6 +1,7 @@
 #ifndef EGS_H_SEEN
 #define EGS_H_SEEN
 
+#include "copyright.hpp"
 #include "array1D.hpp"
 #include "array2D.hpp"
 #include "egsim_pstruct.hpp"
