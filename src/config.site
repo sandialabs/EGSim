@@ -1,0 +1,28 @@
+# Site specific compilation options.
+# Customize this file for your specific site, and then copy it over to a file named config.site
+
+F77 = /Users/csafta/local/gcc-6.4.0/bin/gfortran-6.4.0
+FC  = $(F77)
+CC  = /Users/csafta/local/gcc-6.4.0/bin/gcc-6.4.0
+CXX = /Users/csafta/local/gcc-6.4.0/bin/g++-6.4.0
+CPP = /Users/csafta/local/gcc-6.4.0/bin/gpp-6.4.0
+OPT = 2
+FFLAGS   = -O$(OPT)
+CCFLAGS  = -O$(OPT)
+CXXFLAGS = -O$(OPT) 
+FCLIB = -lgfortran
+# Set FTNNAME to "wsu" if fortran appends a single underscore to function names
+#                "wdu" if it appends a double underscore
+FTNNAME = wsu
+DFLAGS  = 
+LDFLAGS =
+# To use other versions of BLAS, LAPACK or SLATEC, just change the macros below
+# As a disclaimer: the Makefiles have only been tested with the versions of these
+# libraries that come with the UQTk distribution.
+BLAS   = uqtkblas
+LAPACK = uqtklapack
+SLATEC = uqtkslatec
+#
+RANLIB = ranlib
+AR = ar cr
+
